@@ -31,6 +31,16 @@ This project is dedicated to exploring and generating fractal patterns. Fractals
   <em>Example of a Julia set fractal.</em>
 </p>
 
+### Generating Fractal Images Using Alternative Formulas
+
+<p align="center">
+  <img src="/cmake-build-debug/tribleZ.bmp" alt="Mandelbrot Example">
+  <br>
+<em>An Example of a Mandelbrot Set Using formula z<sup>3</sup> + c</em>
+
+</p>
+
+
 ## Languages and Tools
 <p align="left">
   <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
