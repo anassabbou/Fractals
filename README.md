@@ -37,7 +37,52 @@ This project is dedicated to exploring and generating fractal patterns. Fractals
   <img src="/generated_images/tribleZ.bmp" alt="Mandelbrot Example">
   <br>
 <em>An Example of a Mandelbrot Set Using formula z<sup>3</sup> + c</em>
+  
+<img src="/generated_images/addeffect2x2.bmp" alt="Mandelbrot Example">
+  <br>
+<img src="/generated_images/addeffect3X2.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/addeffectX2.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/addeffet2X2.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/blueX2.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/otherTest.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/puissance4.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/puissance5.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/puissance6.bmp" alt="Mandelbrot Example">
+  <br>
 
+
+  <img src="/generated_images/puissance7.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/test2.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/testgreen" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/tribleZ.bmp" alt="Mandelbrot Example">
+  <br>
+  <img src="/generated_images/puissance6.bmp" alt="Mandelbrot Example">
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </p>
 
 
