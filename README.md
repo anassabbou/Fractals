@@ -33,12 +33,12 @@ This project is dedicated to exploring and generating fractal patterns. Fractals
 
 ## Languages and Tools
 <p align="left">
-  <a href="https://cmake.org/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Cmake.svg" alt="cmake" width="40" height="40"/>
-  </a>
   <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
   </a> 
+  <a href="https://cmake.org/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Cmake.svg" alt="cmake" width="40" height="40"/>
+  </a>
   <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
   </a> 
@@ -49,3 +49,10 @@ To set up this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/anassabbou/Fractals.git
+
+## Connect with me
+<p align="left">
+<a href="https://linkedin.com/in/anass-abbou/" target="blank">
+  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="anass-abbou/" height="30" width="40" />
+</a>
+</p>
