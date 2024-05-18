@@ -20,10 +20,6 @@ namespace abbouspace {
         pPixel[0] = blue;
         pPixel[1] = green;
         pPixel[2] = red;
-
-
-
-
     }
 
     bool Bitmap::write(std::string filename) {

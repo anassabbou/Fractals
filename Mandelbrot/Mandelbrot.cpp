@@ -16,13 +16,12 @@ namespace abbouspace {
      int Mandelbrot::getIterations(double x, double y) {
         complex<double> z=0;
         complex<double> c(x, y);
-        complex<double> k;
-        k.real(1);k.imag(8);
 
         int iterations=0;
         while(iterations < Mandelbrot::MAX_ITERATIONS){
-            z= z*z +c;
-
+            // z= (((2.0 / 3.0) * pow(z, 3.0) - 2.0 * z - 1.0) / pow((z + 1.0), 2.0)) + c + 1.0;
+                z=z*z+c;
+            //*****
             if(abs(z)>2){
                 break;
             }

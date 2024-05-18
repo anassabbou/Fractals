@@ -18,8 +18,8 @@ int main() {
     for(int y=0; y<HEIGHT; y++){
         for(int x=0; x<WIDTH; x++){
             // ******** control
-            double xMoving=20, yMoving=10;
-            double yZoom=HEIGHT - 200, xZoom=HEIGHT -100;
+            double xMoving=150, yMoving=2;
+            double yZoom=HEIGHT - 130, xZoom=HEIGHT -60;
             // **********
             double xFractal =((x - WIDTH/2) - xMoving) * 2.0/xZoom;
             double yFractal=(y - HEIGHT/2 + yMoving) * 2.0/(yZoom);
@@ -49,16 +49,16 @@ int main() {
                 for (int i = 0; i <= iterations; i++) {
                     hue += ((double) histogram[i]) / total;
                 }
-
-                green = pow(0,hue);
-                red = pow(153,hue);
-                blue= pow(153,hue);
+//rgb(250, 163, 0)
+                red = pow(3,hue*2);
+                green = pow(60,hue*1.6);
+                blue= pow(200,hue);
                 bitmap.setPixel(x, y, red, green, blue);
             }
         }
     }
 
-    bitmap.write("../generated_images/test1.bmp");
+    bitmap.write("../generated_images/test.bmp");
     cout<< "Finished." << endl;
 
     return 0;
