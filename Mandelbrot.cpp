@@ -19,7 +19,7 @@ namespace abbouspace {
 
         int iterations=0;
         while(iterations < Mandelbrot::MAX_ITERATIONS){
-            z= z*z +c;
+            z= z*z*z +c;
 
             if(abs(z)>2){
                 break;

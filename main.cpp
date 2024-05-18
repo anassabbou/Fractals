@@ -17,8 +17,12 @@ int main() {
 
     for(int y=0; y<HEIGHT; y++){
         for(int x=0; x<WIDTH; x++){
-            double xFractal =((x - WIDTH/2) - 200) * 2.0/HEIGHT;
-            double yFractal=(y - HEIGHT/2) * 2.0/HEIGHT;
+            // ******** control
+            double xMoving=20, yMoving=10;
+            double yZoom=HEIGHT - 200, xZoom=HEIGHT -100;
+            // **********
+            double xFractal =((x - WIDTH/2) - xMoving) * 2.0/xZoom;
+            double yFractal=(y - HEIGHT/2 + yMoving) * 2.0/(yZoom);
             int  iterations= Mandelbrot::getIterations(xFractal,yFractal);
             fractal[y * WIDTH + x]= iterations;
 
