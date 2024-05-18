@@ -12,21 +12,21 @@ This project is dedicated to exploring and generating fractal patterns. Fractals
 ## Visual Examples
 ### Utilizing Different Colors
 <p align="center">
-  <img src="/cmake-build-debug/greenMandelbrot.bmp" style="width: 30%; margin: 5px;" />
-  <img src="/cmake-build-debug/redMandelbrot.bmp" style="width: 30%; margin: 5px;" />
-  <img src="/cmake-build-debug/whiteMandelbrot.bmp" style="width: 30%; margin: 5px;" />
+  <img src="/generated_images/greenMandelbrot.bmp" style="width: 30%; margin: 5px;" />
+  <img src="/generated_images/redMandelbrot.bmp" style="width: 30%; margin: 5px;" />
+  <img src="/generated_images/whiteMandelbrot.bmp" style="width: 30%; margin: 5px;" />
 </p>
 
 ### Enhancing the Mandelbrot Set with Histogram Techniques
 
 <p align="center">
-  <img src="/cmake-build-debug/usingHistogram.bmp" alt="Mandelbrot Example">
+  <img src="/generated_images/usingHistogram.bmp" alt="Mandelbrot Example">
   <br>
   <em>An Example of a Mandelbrot Set Using Histogram Coloring</em>
 </p>
 
 <p align="center">
-  <img src="/cmake-build-debug/improvingF.bmp" alt="Julia Set Example">
+  <img src="/generated_images/improvingF.bmp" alt="Julia Set Example">
   <br>
   <em>Example of a Julia set fractal.</em>
 </p>
@@ -34,7 +34,7 @@ This project is dedicated to exploring and generating fractal patterns. Fractals
 ### Generating Fractal Images Using Alternative Formulas
 
 <p align="center">
-  <img src="/cmake-build-debug/tribleZ.bmp" alt="Mandelbrot Example">
+  <img src="/generated_images/tribleZ.bmp" alt="Mandelbrot Example">
   <br>
 <em>An Example of a Mandelbrot Set Using formula z<sup>3</sup> + c</em>
 
