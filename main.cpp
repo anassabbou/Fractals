@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Bitmap.h"
-#include "Mandelbrot.h"
+#include "Bitmap/Bitmap.h"
+#include "Mandelbrot/Mandelbrot.h"
 #include <cstdint>
 #include <memory>
 #include <math.h>
@@ -50,14 +50,15 @@ int main() {
                     hue += ((double) histogram[i]) / total;
                 }
 
-                green = pow(255,hue);
-
+                green = pow(0,hue);
+                red = pow(153,hue);
+                blue= pow(153,hue);
                 bitmap.setPixel(x, y, red, green, blue);
             }
         }
     }
 
-    bitmap.write("test.bmp");
+    bitmap.write("../generated_images/test1.bmp");
     cout<< "Finished." << endl;
 
     return 0;
