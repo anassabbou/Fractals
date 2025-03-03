@@ -3,4 +3,4 @@ project(Fractals)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Fractals main.cpp Bitmap/BitmapFileHeader.h Bitmap/BitmapInfoHeader.h Bitmap/Bitmap.cpp Bitmap/Bitmap.h Mandelbrot/Mandelbrot.cpp Mandelbrot/Mandelbrot.h)
+add_executable(Fractals main.cpp Bitmap/BitmapFileHeader.h Bitmap/BitmapInfoHeader.h Bitmap/Bitmap.cpp Bitmap/Bitmap.h Mandelbrot/Mandelbrot.cpp Mandelbrot/Mandelbrot.h Mandelbrot/BurningShip.cpp Mandelbrot/Julia.cpp Mandelbrot/Sierpinski.cpp)
