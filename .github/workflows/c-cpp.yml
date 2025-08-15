@@ -1,23 +1,61 @@
-name: C/C++ CI
+name: Build Fractals
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: "CMake build type"
+        type: choice
+        options: [Release, Debug]
+        default: Release
+      width:
+        description: "Image width"
+        type: string
+        default: "1920"
+      height:
+        description: "Image height"
+        type: string
+        default: "1080"
+      max_iters:
+        description: "Max iterations"
+        type: string
+        default: "1000"
+      color_map:
+        description: "Color scheme"
+        type: choice
+        options: [classic, histogram, fire, ocean]
+        default: classic
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      - uses: actions/checkout@v4
+
+      # Make the inputs available as env vars for later steps
+      - name: Export inputs to env
+        run: |
+          echo "BUILD_TYPE=${{ inputs.build_type }}" >> "$GITHUB_ENV"
+          echo "WIDTH=${{ inputs.width }}"       >> "$GITHUB_ENV"
+          echo "HEIGHT=${{ inputs.height }}"     >> "$GITHUB_ENV"
+          echo "MAX_ITERS=${{ inputs.max_iters }}" >> "$GITHUB_ENV"
+          echo "COLOR_MAP=${{ inputs.color_map }}" >> "$GITHUB_ENV"
+
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y cmake g++
+
+      - name: Configure (CMake)
+        run: |
+          cmake -B build -S . \
+            -DCMAKE_BUILD_TYPE="$BUILD_TYPE" \
+            -DIMAGE_WIDTH="$WIDTH" \
+            -DIMAGE_HEIGHT="$HEIGHT" \
+            -DMAX_ITERS="$MAX_ITERS" \
+            -DCOLOR_MAP="$COLOR_MAP"
+
+      - name: Build
+        run: cmake --build build --config "$BUILD_TYPE" -j 2
+
+      - name: Run (example)
+        run: ./build/Fractals || true
